@@ -1,0 +1,6 @@
+import MainPage from './MainPage'
+import './index.css'
+
+export default function App() {
+  return <MainPage />
+}
