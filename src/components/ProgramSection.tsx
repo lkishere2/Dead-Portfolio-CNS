@@ -23,6 +23,13 @@ const programs = [
         type: 'docx' as const,
     },
     {
+        week: '4',
+        title: 'Học tập & Làm việc cộng tác nhóm',
+        description: 'Dự án nhóm AI-CNS — phối hợp qua Trello, Zalo và Google Drive để sản xuất sản phẩm truyền thông số. Vai trò Editor & điều phối phân cảnh.',
+        file: '/programs/Week4.pdf',
+        type: 'pdf' as const,
+    },
+    {
         week: '5',
         title: 'Sáng tạo nội dung số với AI',
         description: 'Dự án "Green Thread" — Gemini viết storytelling, Midjourney tạo ảnh lookbook, Canva hoàn thiện infographic.',
@@ -48,9 +55,8 @@ const programs = [
 export default function ProgramSection() {
     return (
         <section id="programs" className="bg-blue-50 px-8 py-20">
-            <div className="mx-auto max-w-6xl w-full">
+            <div className="mx-auto max-w-7xl w-full">
 
-                {/* heading */}
                 <p className="text-blue-500 text-[11px] tracking-[3px] uppercase font-semibold mb-2">
                     Programs
                 </p>
@@ -63,11 +69,8 @@ export default function ProgramSection() {
 
                 {/* horizontal timeline */}
                 <div className="relative">
-                    {/* line */}
                     <div className="absolute top-5 left-0 right-0 h-px bg-blue-200 z-0" />
-
-                    {/* nodes */}
-                    <div className="relative z-10 grid grid-cols-6 gap-4">
+                    <div className="relative z-10 grid grid-cols-7 gap-3">
                         {programs.map((program) => (
                             <ProgramItem key={program.week} {...program} />
                         ))}
