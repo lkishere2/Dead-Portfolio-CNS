@@ -1,1 +1,0 @@
-Dead shytty website 😭
